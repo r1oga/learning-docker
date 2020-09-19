@@ -1,0 +1,21 @@
+{
+  "name": "fibonacci-calculator",
+  "version": "1.0.0",
+  "description": "Multi containers application to calculate Fibonacci numbers.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r1oga/learning-docker/tree/fibonacci-calculator"
+  },
+  "author": "r1oga",
+  "license": "MIT",
+  "homepage": "https://github.com/r1oga/learning-docker/tree/fibonacci-calculator#readme",
+  "dependencies": {
+    "nodemon": "1.18.3",
+    "redis": "2.8.0"
+  }
+}
