@@ -4,3 +4,6 @@ Multi containers application.
 ![Diagram](./architecture.png)
 
 ![nginx](./nginx.png)
+
+## Deployment on Elastic Beanstalk
+![Deployment](deployment-eb.png)
