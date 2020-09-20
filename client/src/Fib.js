@@ -30,7 +30,7 @@ export default () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <label for='index'>Enter your index:</label>
+        <label htmlFor='index'>Enter your index:</label>
         <br />
         <input
           id='index'
