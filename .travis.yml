@@ -1,0 +1,22 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t r1oga/fib-calc-client-test -f ./client/Dockerfile.dev ./client
+
+script:
+  - docker run -e CI=true r1oga/fib-calc-client-test npm test
+
+after_success:
+  - docker build -t r1oga/fib-calc-client ./client
+  - docker build -t r1oga/fib-calc-api ./api
+  - docker build -t r1oga/fib-calc-worker ./worker
+  - docker build -t r1oga/fib-calc-nginx ./nginx
+  # log in to the docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  #  take those images and push them to docker hub
+  - docker push r1oga/fib-calc-client
+  - docker push r1oga/fib-calc-api
+  - docker push r1oga/fib-calc-worker
+  - docker push r1oga/fib-calc-nginx
