@@ -30,18 +30,21 @@ export default () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <label>Enter your index</label>
-        <input value={index} onChange={event => setIndex(event.target.value)} />
+        <label for='index'>Enter your index:</label>
+        <br />
+        <input
+          id='index'
+          value={index}
+          onChange={event => setIndex(event.target.value)}
+        />
         <button>Submit</button>
       </form>
 
       <h3>Indexes I have seen:</h3>
       {seenIndexes.map(({ number }) => number).join(', ')}
       <h3>Calculated Values</h3>
-      {Object.values(values).map((value, index) => (
-        <div key={index}>
-          For index {index} I calculated {value}
-        </div>
+      {Object.entries(values).map(([index, value], key) => (
+        <div key={key}>{`${index}: ${value}`}</div>
       ))}
     </div>
   )
