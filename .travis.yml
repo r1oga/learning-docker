@@ -26,10 +26,9 @@ deploy:
   region: eu-central-1
   app: fibonacci-calculator
   env: FibonacciCalculator-env
-  bucket_name: elasticbeanstalk-eu-central-1-146331105959
+  bucket: elasticbeanstalk-eu-central-1-146331105959
   bucket_path: fib-calc
   on:
     branch: fibonacci-calculator
   access_key_id: $AWS_ACCESS_KEY
-  secret_access_key:
-    secure: $AWS_SECRET_KEY
+  secret_access_key: $AWS_SECRET_KEY
