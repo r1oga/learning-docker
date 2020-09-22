@@ -5,19 +5,22 @@
       "name": "client",
       "image": "r1oga/fib-calc-client",
       "hostname": "client",
-      "essential": false
+      "essential": false,
+      "memory": 128
     },
     {
       "name": "api",
       "image": "r1oga/fib-calc-api",
       "hostname": "api",
-      "essential": false
+      "essential": false,
+      "memory": 128
     },
     {
       "name": "worker",
       "image": "r1oga/fib-calc-worker",
       "hostname": "worker",
-      "essential": false
+      "essential": false,
+      "memory": 128
     },
     {
       "name": "nginx",
@@ -25,7 +28,8 @@
       "hostname": "nginx",
       "essential": true,
       "portMappings": [{ "hostPort": 80, "containerPort": 80 }],
-      "links": ["api", "client"]
+      "links": ["api", "client"],
+      "memory": 128
     }
   ]
 }
