@@ -24,8 +24,8 @@ after_success:
 deploy:
   provider: elasticbeanstalk
   region: eu-central-1
-  app: fibonacci-calculator
-  env: FibonacciCalculator-env
+  app: fib-calc
+  env: FibCalc-env
   bucket: elasticbeanstalk-eu-central-1-146331105959
   bucket_path: fib-calc
   on:
