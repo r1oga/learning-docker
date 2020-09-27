@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: client
-      image: r1oga/fib-calc-client-k8s
+      image: r1oga/fib-calc-worker
       ports:
         - containerPort: 3000
