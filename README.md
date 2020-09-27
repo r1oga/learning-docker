@@ -5,4 +5,5 @@ Multi containers application.
 
 ![nginx](./nginx.png)
 
-## Deplyoment with Kubernetes
+## Deployment with Kubernetes
+`kubectl apply -f k8s`
