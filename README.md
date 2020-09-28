@@ -9,3 +9,4 @@ Multi containers application.
 ![](./ingress-nginx.png)
 
 Enable ingress: `minikube addons enable ingress`  
+
