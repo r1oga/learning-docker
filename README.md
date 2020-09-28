@@ -6,5 +6,7 @@ Multi containers application.
 ![nginx](./nginx.png)
 
 ## Deployment with Kubernetes
-![](./ingress-nginx.png)  
+![](./ingress-nginx.png)
+
+
 
