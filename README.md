@@ -6,4 +6,4 @@ Switch between branches to see the different projects:
 - fib-calc: Multi containers application to compute Fibonacci numbers.  
 Postgres|Redis|React|NodeJS|Nginx
   - fib-calc-simple-k8s: deploy one container of this multi containers app with kubernetes
-  - fib-calc-k8s: full app deployment with kubernetes
+  - fib-calc-k8s: full app deployment with kubernetes & Google Cloud
