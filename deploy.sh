@@ -1,4 +1,4 @@
-docker build -t r1oga/fib-calc-client-k8s:latest -t r1oga/fib-calc-client-k8s:$SHA ./client/Dockerfile ./client
+docker build -t r1oga/fib-calc-client-k8s:latest -t r1oga/fib-calc-client-k8s:$SHA -f ./client/Dockerfile ./client
 docker build -t r1oga/fib-calc-api:latest -t r1oga/fib-calc-api:$SHA -f ./api/Dockerfile ./api
 docker build -t r1oga/fib-calc-worker:latest -t r1oga/fib-calc-worker:$SHA -f ./worker/Dockerfile ./worker
 
