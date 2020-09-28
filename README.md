@@ -6,7 +6,5 @@ Multi containers application.
 ![nginx](./nginx.png)
 
 ## Deployment with Kubernetes
-![](./ingress-nginx.png)
-
-Enable ingress: `minikube addons enable ingress`  
+![](./ingress-nginx.png)  
 

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: r1oga/fib-calc-api:v2
+          image: r1oga/fib-calc-api
           ports:
             - containerPort: 5000
           env:
